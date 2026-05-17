@@ -4,7 +4,9 @@ import sqlite3
 from datetime import datetime, timedelta
 
 # --- 設定 ---
-TOKEN = 'MTUwNTQwMjg3MjgyODAwMjM0NA.GK3eE6.XsEXP_Li08ydQKGztMYOnwiw5k29NFTNCu7eDs'  # Botのトークン
+import os
+
+TOKEN = os.getenv("TOKEN")
 
 # チャンネルID設定（すべて整数で入力してください）
 TEXT_NOTIFY_CHANNEL_ID = 1505413456403370106  # 入退室の通知を流すテキストチャンネルのID
